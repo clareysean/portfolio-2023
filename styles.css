@@ -1,0 +1,42 @@
+:root{
+    --gray-bg: #EFF5F5;
+    --gray-shadow: #D6E4E5;
+    --orange-accent: #EB6440;
+}
+
+body {
+    font-family: Manrope, Arial, sans-serif;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav{
+    display: flex;
+    gap: 20px
+}
+
+.navbar-brand{
+    display: inline;
+}
+
+.bar{
+    display: block;
+    width: 40px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background-color: black;
+  }
+
+.avatar {
+height: 200px
+}
+
+a{
+ text-decoration: none;
+ color: black;
+}
