@@ -39,6 +39,36 @@ body, html {
     margin-top: 5px;
 }
 
+.bold-txt{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.bold-txt-sm{
+    font-size: 1.2rem;
+    color: var(--orange-accent);
+}
+
+.bg-gray{
+    background-color: var(--gray-bg);
+}
+
+.ml-5{
+    margin-left: 4px;
+}
+
+.stack-tag{
+    padding: 5px 10px 5px 10px;
+    margin: 10px 0;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+span{    
+    white-space: nowrap;
+}
+
+
 /* header */
 
 .container-fluid{
@@ -82,7 +112,7 @@ body, html {
 
 .logo-img{
     height: 147px;
-    margin: -5px 0 0 70px;
+    margin: 10px 0 0 70px;
 }
 
 /* burger */
@@ -144,15 +174,14 @@ h1{
 h2{
     color: var(--orange-accent);
     font-weight: 400;
-    margin: 2px 0 0 75px;
 }
 
 /* profile section */
 
 .black-block{
-    height: 278px;
+    height: 313px;
     width: 750px;
-    top: 459px;
+    top: 479px;
     left: 60px;
     max-width: 100%;
     position: absolute;
@@ -182,6 +211,11 @@ a{
 
 /* education section */
 
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
 .education-card > h2{
     margin-top: 130px;
 }
@@ -195,10 +229,6 @@ a{
     flex-direction: column;
     align-items: start;
     justify-content: flex-start;
-}
-.bold-txt{
-    font-size: 1.6rem;
-    font-weight: 500;
 }
 
 .avatar {
@@ -221,7 +251,7 @@ margin: 5px;
 }
 
 .project-img{
-    height: 400px;
+    height: 300px;
     border-radius: 3px;
     -webkit-box-shadow: 3px 3px 15px -9px var(--gray-shadow); 
     box-shadow: 3px 3px 15px -5px var(--gray-shadow);
@@ -230,13 +260,16 @@ margin: 5px;
 .project-card{
     width: 1300px;
     display: flex;
+    word-wrap:normal
 }
 
 .btn-link{
     padding: 5px 10px 5px 10px;
     border: 2px solid black;
     transition: all 0.1s ease-in-out;
+    text-decoration: none;
 }
+
 
 .btn-link:hover{
     background-color: var(--orange-accent);
@@ -250,6 +283,7 @@ margin: 5px;
 
 .contact-container{
     display: flex;
+    margin: 70px;
     gap: 90px;
     width: 100%;
 }
