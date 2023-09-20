@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
     <title>Sean Clarey</title>
@@ -20,13 +20,11 @@
             <span class="bar"></span><span class="bar"></span><span class="bar"></span>
           </div>
           <div class="navbar-nav">
-              <a href="#">About Me</a>
               <a href="#">Education</a>
               <a href="#">Projects</a>
               <a href="#">Contact</a>
           </div>
           <div id='nav-menu-hidden' class="nav-menu-hidden">
-            <a href="#">About Me</a>
             <a href="#">Education</a>
             <a href="#">Projects</a>
             <a href="#">Contact</a>
@@ -35,23 +33,58 @@
     </nav>
   </header>
   <body>
+
       <section class="home">
         <h1>Sean</h1>
-        <div class="white-bar white-bar-1"></div>
-        <div class="white-bar white-bar-2"></div>
-        <div class="white-bar white-bar-3"></div>
-        <div class="white-bar white-bar-4"></div>
         <div class="bg-orange">
           <h1 class="white-text mt-0">Clarey</h1>
         </div>
-        <h3>Full Stack Developer.</h3>
-        <div class="black-block"></div>
-        <div class="profile-card">
-          <p>Hi, I'm Sean, a software developer based in Toronto, Canada. I'm dedicated to creating user-friendly and scalable applications. My goal is to solve design challenges on both the front and back-end, with a focus on modularity and reusability. I’m passionate about learning new technologies and continuously expanding my skillset. Drawing from my experience as a teacher, I excel in communication and collaboration within a team. Let’s build something!
-          </p>
-          <img class="avatar" src="./assets/images/Sean-Clarey-Headshot-greyscale.png" alt="Sean Clarey Avatar">
-        </div>
+        <h2>Full Stack Developer.</h2>
       </section>
+
+        <section id="about">
+          <div class="black-block"></div>
+          <div class="card">
+            <p><span class="bold-txt">Hi, I'm Sean,</span> a software developer based in Toronto, Canada. I'm dedicated to creating user-friendly and scalable applications. My goal is to solve design challenges on both the front and back-end, with a focus on modularity and reusability. I'm passionate about learning new technologies and continuously expanding my skillset. Drawing from my experience as a teacher, I excel in communication and collaboration within teams. Let's build something!</p>
+            <img class="avatar" src="./assets/images/Sean-Clarey-Headshot-greyscale.png" alt="Sean Clarey Avatar">
+          </div>
+        </section>
+
+        <section id="education">
+          <div class="card education-card">
+            <img class="icon" src="./assets/images/globe-svgrepo-com.svg" alt="Globe Icon">
+            <div class="card-col">
+              <h2 class="card-header">Education.</h2>
+              <p><span class="bold-txt">General Assembly • Software Engineering Immersive</span><br>
+                June - September 2023 <br>
+                <img class="sm-icon" src="./assets/images/location-pin-svgrepo-com.svg" alt="location icon">
+                Remote
+              </p>
+              <p><span class="bold-txt">The App Brewery • Complete Web Development Bootcamp</span><br>
+                January - May 2023 <br>
+                <img class="sm-icon" src="./assets/images/location-pin-svgrepo-com.svg" alt="location icon">
+                Remote
+              </p>
+              <p><span class="bold-txt">Humber College • Bachelor of Music Performance</span><br>
+                September 2013 - June 2017 <br>
+                <img class="sm-icon" src="./assets/images/location-pin-svgrepo-com.svg" alt="location icon">
+                Toronto, Canada
+              </p>
+            </div>
+            <div></div>
+          </div>
+        </section>
+
+        <section id="projects">
+          <div class="card project-card">
+            <div class="card-col">
+              <h2 class="card-header card-header-lg">Projects.</h2>
+              <p><span class="bold-txt">My Health Console:</span><br>MyHealthConsole is a platform designed to help users keep track of their healthcare-related information. On the app users can track their care providers, prescriptions, or appointments. Our app provides a convenient and organized solution for all your healthcare data tracking needs. Built using the Django web framework and powered by PostgreSQL, this app ensures security, reliability, and a seamless user experience.</p>
+            </div>
+            <img class="project-img" src="https://images2.imgbox.com/60/36/tjxUEZbh_o.png" alt="MyHealthConsole home page">
+          </div>
+        </section>
+      
   </body>
 </div>
 </html>

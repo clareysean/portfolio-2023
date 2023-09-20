@@ -17,7 +17,7 @@ body, html {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .navbar-nav{
@@ -32,7 +32,7 @@ body, html {
 
 .nav-menu-hidden{
     position: fixed;
-    right: -500px;
+    right: -100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -54,7 +54,7 @@ body, html {
 
 .logo-img{
     height: 147px;
-    margin: -5px 0 0 50px;
+    margin: -5px 0 0 70px;
 }
 
 /* burger */
@@ -99,6 +99,7 @@ body, html {
 
 h1{
     font-size: 4rem;
+    font-weight: 400;
     margin: 20px 0 0 70px;
 }
 
@@ -116,17 +117,18 @@ h1{
     width: 810px
 }
 
-h3{
+h2{
     color: var(--orange-accent);
-    margin: 2px 0 0 70px;
+    font-weight: 400;
+    margin: 2px 0 0 75px;
 }
 
 /* profile section */
 
 .black-block{
-    height: 260px;
+    height: 270px;
     width: 740px;
-    top: 452px;
+    top: 459px;
     left: 70px;
     max-width: 100%;
     position: absolute;
@@ -134,7 +136,7 @@ h3{
     z-index: -1;
 }
 
-.profile-card{
+.card{
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -142,9 +144,45 @@ h3{
     margin: 50px;
     padding: 20px
 }
+
+/* education section */
+
+.education-card > h2{
+    margin-top: 130px;
+}
+
+.card-header{
+    margin-left: 0;
+}
+
+.card-header-lg{
+    font-size: 3rem;
+    color: var(--orange-accent);
+}
+
+.card-col{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+}
+.bold-txt{
+    font-size: 1.3rem;
+}
+
 .avatar {
 height: 200px;
 width: 200px;
+margin: 5px;
+}
+
+.icon{
+    height: 100px
+}
+
+.sm-icon{
+    height: 20px;
+    margin-top: 3px;
 }
 
 a{
@@ -153,10 +191,17 @@ a{
  margin-top: 10px;
 }
 
-p{
-    font-size: 2rem;
+/* projects section */
+
+.project-img{
+    height: 400px;
+    -webkit-box-shadow: 3px 3px 15px -9px var(--gray-shadow); 
+    box-shadow: 3px 3px 15px -5px var(--gray-shadow);
 }
 
+.project-card{
+    width: 1300px
+}
 
 @media (max-width: 740px){
     .navbar-nav{
@@ -176,12 +221,13 @@ p{
     width: 720px;
     top: 600px;
     left: 51px;
+    max-width: none;
     position: absolute;
     background-color: black;
     z-index: -1;
-}
+    }
 
-    .profile-card{
+    .card{
         width: 650px;
         flex-direction: column;
     }
@@ -190,15 +236,8 @@ p{
         position: absolute;
         z-index: 2;
     }
-}
-@media (max-width: 540px){
-
-       .black-block{
-    max-width: none;
+    p{
+    font-size: 2rem;
+    }
 }
 
-}
-
-
-/* -webkit-box-shadow: 1px 5px 13px 0px var(--gray-shadow); 
-box-shadow: 1px 5px 13px 0px var(--gray-shadow); */
