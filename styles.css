@@ -25,6 +25,20 @@ body, html {
     margin-left: 75px;
 }
 
+.icon{
+    height: 100px
+}
+
+.sm-icon{
+    height: 25px;
+    margin-top: 5px;
+}
+
+.xs-icon{
+    height: 20px;
+    margin-top: 5px;
+}
+
 /* header */
 
 .container-fluid{
@@ -32,7 +46,6 @@ body, html {
     justify-content: flex-end;
     max-width: 100vw;
     position: relative;
-    /* overflow-x: hidden; */
 }
 
 .navbar-nav{
@@ -156,6 +169,17 @@ h2{
     padding: 20px
 }
 
+a{
+    color: black;
+    margin: 0 5px; 
+}
+
+.flex-span{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
 /* education section */
 
 .education-card > h2{
@@ -183,16 +207,7 @@ width: 200px;
 margin: 5px;
 }
 
-.icon{
-    height: 100px
-}
-
-.sm-icon{
-    height: 25px;
-    margin-top: 5px;
-}
-
-a{
+.navlink{
  text-decoration: none;
  color: black;
  margin-top: 10px;
