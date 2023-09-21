@@ -222,6 +222,10 @@ a{
     margin-left: 0;
 }
 
+.wrap{
+    white-space: wrap;
+}
+
 .card-col{
     display: flex;
     flex-direction: column;
