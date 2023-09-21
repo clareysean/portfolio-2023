@@ -4,11 +4,12 @@
     --orange-accent: #EB6440;
 }
 
-body, html {
+body, html{
     font-family: Manrope, Arial, sans-serif;
     box-sizing: border-box;
     margin: 0;
     min-width: fit-content;
+    overflow-x: hidden;
 }
 
 /* utility */
@@ -22,11 +23,11 @@ body, html {
 }
 
 .ml{
-    margin-left: 75px;
+    margin-left: 65px;
 }
 
 .icon{
-    height: 100px
+    height: 100px;
 }
 
 .sm-icon{
@@ -111,21 +112,24 @@ span{
 }
 
 .logo-img{
-    height: 147px;
-    margin: 10px 0 0 70px;
+    height: 212px;
+    margin: 10px 0 0 50px;
 }
 
 /* burger */
 
 .burger{
     display: none;
-    margin: 5px 15px 10px 10px;
+    margin: 10px 25px 10px 10px;
     z-index: 2;
 }
 .burger-active{
-    position: absolute;
-    margin: 5px 15px 10px 10px;
+    position: fixed;
+    margin: 10px 25px 10px 10px;
     z-index: 2;
+}
+.burger-fixed{
+    position: fixed;
 }
 .burger-active .bar:nth-child(3){
     rotate: 90deg;
@@ -152,7 +156,7 @@ span{
 /* home */
 
 .home{
-    margin-top: 150px;
+    margin-top: 180px;
 }
 
 h1{
@@ -194,8 +198,10 @@ h2{
     justify-content: space-between;
     background-color: white;
     width: 700px;
-    margin: 50px;
-    padding: 20px
+    margin: 30px 50px 50px;
+    padding: 20px;
+    border-top: 2px solid var(--gray-bg);
+    border-left: 8px solid var(--gray-bg);
 }
 
 a{
@@ -218,10 +224,7 @@ a{
 
 .education-header{
     margin-top: 95px;
-}
 
-.education-card > h2{
-    margin-top: 130px;
 }
 
 .card-header{
@@ -245,6 +248,7 @@ margin: 5px;
  text-decoration: none;
  color: black;
  margin-top: 10px;
+ font-size: 2rem;
 }
 
 /* projects section */
@@ -292,7 +296,7 @@ margin: 5px;
 
 .contact-container{
     display: flex;
-    margin: 70px;
+    /* margin: 70px; */
     gap: 90px;
     width: 100%;
 }
@@ -322,32 +326,60 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     color: gray;
 }
 
 @media (max-width: 1000px){
+
+    .btn-link{
+        font-size: 1.3rem;
+    }
+
     p{
-    font-size: 1.4rem;
+        font-size: 1.5rem;
+    }
+
+    .xs-icon{
+        height: 30px;
     }
 
     h1{
         font-size: 6rem;
         margin: 20px 0 0 50px;
     }
+
+    h2{
+        font-size: 2.2rem;
+    }
+
     h3{
-        font-size: 3rem;
+        font-size: 2.6rem;
         margin: 2px 0 0 55px;
     }
 
+    .bold-txt{
+        font-size: 1.7rem;
+    }
+
+    .contact-container{
+        gap: 50px;
+    }
+
     .black-block{
-    height: 500px;
-    width: 770px;
-    top: 565px;
-    left: 52px;
-    max-width: none;
-    position: absolute;
-    background-color: black;
-    z-index: -1;
+        height: 500px;
+        width: 770px;
+        top: 565px;
+        left: 52px;
+        max-width: none;
+        position: absolute;
+        background-color: black;
+        z-index: -1;
+    }
+
+    .project-title{
+        font-size: 2rem;
+        font-weight: 500;
     }
 }
 
@@ -356,17 +388,15 @@ footer{
         visibility: hidden;
     }
     .black-block{
-    height: 578px;
-    width: 720px;
-    top: 600px;
-    left: 51px;
-    max-width: none;
-    position: absolute;
-    background-color: black;
-    z-index: -1;
+        height: 670px;
+        width: 720px;
+        top: 622px;
+        left: 51px;
+        max-width: none;
+        position: absolute;
+        background-color: black;
+        z-index: -1;
     }
-
-
     .card{
         width: 650px;
         flex-direction: column;
