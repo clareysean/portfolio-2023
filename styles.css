@@ -58,20 +58,11 @@ body, html{
     margin-left: 4px;
 }
 
-.stack-tag{
-    padding: 5px 10px 5px 10px;
-    display: inline-block;
-    margin: 2px 0;
-    border: 2px solid black;
-    text-decoration: none;
-}
-
-span{    
-    white-space: nowrap;
-}
-
-
 /* header */
+
+a:hover{
+    color: var(--orange-accent);
+}
 
 .container-fluid{
     display: flex;
@@ -113,7 +104,7 @@ span{
 
 .logo-img{
     height: 212px;
-    margin: 10px 0 0 50px;
+    margin: 10px 0 0 69px;
 }
 
 /* burger */
@@ -184,9 +175,9 @@ h2{
 
 .black-block{
     height: 283px;
-    width: 750px;
-    top: 479px;
-    left: 60px;
+    width: 766px;
+    top: 508px;
+    left: 50px;
     max-width: 100%;
     position: absolute;
     background-color: black;
@@ -276,16 +267,23 @@ margin: 5px;
     word-wrap:normal
 }
 
+.stack-tag{
+    padding: 5px 10px 5px 10px;
+    display: inline-block;
+    margin: 2px 0;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+span{    
+    white-space: nowrap;
+}
+
 .btn-link{
     padding: 5px 10px 5px 10px;
     border: 2px solid black;
     transition: all 0.1s ease-in-out;
     text-decoration: none;
-}
-
-
-.btn-link:hover{
-    background-color: var(--orange-accent);
 }
 
 /* contact section */
@@ -332,6 +330,10 @@ footer{
 
 @media (max-width: 1000px){
 
+    .logo-img{
+    margin: 10px 0 0 50px;
+    }
+
     .btn-link{
         font-size: 1.3rem;
     }
@@ -367,9 +369,9 @@ footer{
     }
 
     .black-block{
-        height: 500px;
+        height: 522px;
         width: 770px;
-        top: 565px;
+        top: 622px;
         left: 52px;
         max-width: none;
         position: absolute;
