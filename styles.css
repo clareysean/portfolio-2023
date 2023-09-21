@@ -103,7 +103,7 @@ a:hover{
 }
 
 .logo-img{
-    height: 212px;
+    height: 143px;
     margin: 10px 0 0 69px;
 }
 
@@ -147,7 +147,7 @@ a:hover{
 /* home */
 
 .home{
-    margin-top: 180px;
+    margin-top: 150px;
 }
 
 h1{
@@ -163,7 +163,7 @@ h1{
 
 .bg-orange{
     background-color: var(--orange-accent);
-    width: 810px
+    width: 816px
 }
 
 h2{
@@ -176,7 +176,7 @@ h2{
 .black-block{
     height: 283px;
     width: 766px;
-    top: 508px;
+    top: 478px;
     left: 50px;
     max-width: 100%;
     position: absolute;
@@ -335,7 +335,8 @@ footer{
 @media (max-width: 1000px){
 
     .logo-img{
-    margin: 10px 0 0 50px;
+        height: 212px;
+        margin: 10px 0 0 50px;
     }
 
     .btn-link{
@@ -375,7 +376,7 @@ footer{
     .black-block{
         height: 522px;
         width: 770px;
-        top: 622px;
+        top: 591px;
         left: 52px;
         max-width: none;
         position: absolute;
@@ -396,7 +397,7 @@ footer{
     .black-block{
         height: 670px;
         width: 720px;
-        top: 622px;
+        top: 591px;
         left: 51px;
         max-width: none;
         position: absolute;
@@ -412,6 +413,5 @@ footer{
         position: absolute;
         z-index: 2;
     }
-
 }
 
