@@ -220,7 +220,7 @@ a {
 }
 
 .education-header {
-  margin-top: 95px;
+  margin-top: 40px;
 }
 
 .card-header {
@@ -336,7 +336,11 @@ span {
 }
 
 .mail-icon {
-  margin-bottom: -13px;
+  margin-bottom: -12px;
+}
+
+.gh-icon {
+  margin-bottom: 4px;
 }
 
 /* footer */
@@ -387,10 +391,10 @@ footer {
 
 @media (max-width: 1450px) {
   .card {
-    max-width: 80vw;
+    max-width: 85vw;
   }
   .project-card {
-    max-width: 80vw;
+    max-width: 85vw;
   }
 }
 
@@ -401,6 +405,9 @@ footer {
   }
   .project-card {
     flex-direction: column;
+  }
+  .project-img {
+    margin-left: 0;
   }
 }
 
@@ -422,10 +429,6 @@ footer {
     font-size: 1.3rem;
   }
 
-  p {
-    font-size: 1.2rem;
-  }
-
   .xs-icon {
     height: 30px;
   }
@@ -442,10 +445,6 @@ footer {
   h3 {
     font-size: 2.6rem;
     margin: 2px 0 0 55px;
-  }
-
-  .bold-txt {
-    font-size: 1.7rem;
   }
 
   .contact-container {
@@ -476,13 +475,22 @@ footer {
 
 @media (max-width: 740px) {
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .first-n {
+    margin-top: 0;
   }
   h2 {
     font-size: 2rem;
   }
+  .home {
+    margin-top: 100px;
+  }
   .ml {
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .black-block {
     height: 670px;
@@ -497,34 +505,45 @@ footer {
   .card {
     width: 650px;
     margin: 30px 10px 50px;
+    padding: 7px;
+    max-width: 88vw;
     flex-direction: column;
   }
   .logo-img {
-    height: 175px;
+    height: 142px;
   }
 }
-
+@media (max-width: 410px) {
+  .contact-inner-container {
+    align-items: start;
+  }
+  .burger {
+    margin: 10px;
+  }
+}
 @media (max-width: 332px) {
   .home {
-    margin-top: 80px;
+    margin-top: 60px;
   }
   .logo-img {
     height: 100px;
     margin: 10px 0 0 20px;
   }
   .ml {
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .card {
     width: 90vw;
-    max-width: 78.5vw;
+    max-width: 88vw;
     margin: 30px 5px 50px;
     flex-direction: column;
+    -webkit-box-shadow: 5px 8px 0px 0px #000000;
+    box-shadow: 5px 8px 0px 0px #000000;
   }
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   p {
-    font-size: 0.9rem;
+    margin-top: 0;
   }
 }
