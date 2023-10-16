@@ -10,6 +10,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   word-wrap: break-word;
+  color: #1c1c1c;
   /* overflow-x: hidden; */
 }
 
@@ -29,7 +30,7 @@ body {
 }
 
 .ml {
-  margin-left: 70px;
+  margin-left: 28vw;
 }
 
 .icon {
@@ -111,7 +112,7 @@ a:hover {
 
 .logo-img {
   height: 211px;
-  margin-top: 10px;
+  margin: 10px 0 0 70px;
 }
 
 /* burger */
@@ -174,8 +175,7 @@ h1 {
 
 .bg-orange {
   background-color: var(--orange-accent);
-  width: 805px;
-  max-width: 100%;
+  width: 100vw;
 }
 
 h2 {
@@ -191,7 +191,7 @@ h2 {
   justify-content: space-between;
   background-color: white;
   width: 700px;
-  margin: 30px 50px 50px;
+  margin: 30px 50px 50px 28vw;
   padding: 20px;
   border-top: 2px solid var(--gray-bg);
   border-left: 8px solid var(--gray-bg);
@@ -268,9 +268,8 @@ a {
 }
 
 .project-img {
-  height: 300px;
+  height: 200px;
   flex-basis: content;
-  margin-left: 50px;
   border-radius: 3px;
   -webkit-box-shadow: 3px 3px 15px -9px var(--gray-shadow);
   box-shadow: 3px 3px 15px -5px var(--gray-shadow);
@@ -279,7 +278,9 @@ a {
 .project-card {
   width: 1300px;
   display: flex;
+  flex-direction: column;
   word-wrap: normal;
+  margin: 50px auto;
 }
 .projects {
   margin-left: 15px;
@@ -305,6 +306,9 @@ span {
 
 .project-cta {
   font-size: 1.7rem;
+  margin: 0 28vw;
+  padding: 0;
+  width: fit-content;
 }
 
 /* contact section */
@@ -362,17 +366,8 @@ footer {
   .education-title {
     font-size: 1.7rem;
   }
-  .ml {
-    margin-left: 75px;
-  }
-  .main-sub {
-    margin: 15px 0 0 85px;
-  }
   h2 {
     font-size: 3rem;
-  }
-  .project-cta {
-    margin-left: 451px;
   }
   p {
     font-size: 1.3rem;
@@ -380,12 +375,6 @@ footer {
   .black-block {
     left: 451px;
     top: 503px;
-  }
-  .bg-orange {
-    width: 1210px;
-  }
-  .card {
-    margin-left: 450px;
   }
 }
 
