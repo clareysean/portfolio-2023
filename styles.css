@@ -30,7 +30,7 @@ body {
 }
 
 .ml {
-  margin-left: 28vw;
+  margin-left: 27.5vw;
 }
 
 .icon {
@@ -191,12 +191,13 @@ h2 {
   justify-content: space-between;
   background-color: white;
   width: 700px;
-  margin: 30px 50px 50px 28vw;
+  margin-top: 30px;
+  margin-bottom: 50px;
   padding: 20px;
   border-top: 2px solid var(--gray-bg);
   border-left: 8px solid var(--gray-bg);
-  -webkit-box-shadow: 5px 5px 0px 5px #000000;
-  box-shadow: 5px 5px 0px 5px #000000;
+  -webkit-box-shadow: 5px 5px 0px 5px #1c1c1c;
+  box-shadow: 5px 5px 0px 5px #1c1c1c;
 }
 
 a {
@@ -258,6 +259,10 @@ a {
   color: var(--orange-accent);
 }
 
+.project-icon {
+  margin-left: 27vw;
+}
+
 .project-title {
   font-size: 1.6rem;
   font-weight: 500;
@@ -268,11 +273,8 @@ a {
 }
 
 .project-img {
-  height: 200px;
   flex-basis: content;
   border-radius: 3px;
-  -webkit-box-shadow: 3px 3px 15px -9px var(--gray-shadow);
-  box-shadow: 3px 3px 15px -5px var(--gray-shadow);
 }
 
 .project-card {
@@ -306,7 +308,6 @@ span {
 
 .project-cta {
   font-size: 1.7rem;
-  margin: 0 28vw;
   padding: 0;
   width: fit-content;
 }
@@ -327,6 +328,7 @@ span {
 
 .contact-inner-container {
   display: flex;
+  height: 4vmin;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -398,9 +400,12 @@ footer {
   .project-img {
     margin-left: 0;
   }
+  .ml {
+    margin-left: 70px;
+  }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1073px) {
   .burger {
     display: inline-block;
     position: absolute;
@@ -432,8 +437,7 @@ footer {
   }
 
   h3 {
-    font-size: 2.6rem;
-    margin: 2px 0 0 55px;
+    font-size: 2.3rem;
   }
 
   .contact-container {
@@ -459,6 +463,9 @@ footer {
   .project-header {
     font-size: 2rem;
     color: var(--orange-accent);
+  }
+  .logo-img {
+    height: 142px;
   }
 }
 
@@ -499,7 +506,7 @@ footer {
     flex-direction: column;
   }
   .logo-img {
-    height: 142px;
+    margin-left: 20px;
   }
 }
 @media (max-width: 410px) {
