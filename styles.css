@@ -111,8 +111,8 @@ a:hover {
 }
 
 .logo-img {
-  height: 211px;
-  margin: 10px 0 0 70px;
+  height: 140px;
+  margin: 10px 0 0 20px;
 }
 
 /* burger */
@@ -155,7 +155,7 @@ a:hover {
 /* home */
 
 .home {
-  margin-top: 150px;
+  margin-top: 6cqh;
 }
 
 h1 {
@@ -182,6 +182,10 @@ h2 {
   color: var(--orange-accent);
   font-weight: 400;
   font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 /* profile section */
@@ -270,6 +274,7 @@ a {
 
 .project-link {
   white-space: wrap;
+  font-size: 2rem;
 }
 
 .project-img {
@@ -283,7 +288,7 @@ a {
   display: flex;
   flex-direction: column;
   word-wrap: normal;
-  margin: 50px auto;
+  margin: 80px auto;
 }
 .projects {
   margin-left: 15px;
@@ -306,10 +311,10 @@ span {
   transition: all 0.1s ease-in-out;
   text-decoration: none;
   text-wrap: nowrap;
+  font-size: 1.3rem;
 }
 
 .project-cta {
-  font-size: 1.7rem;
   padding: 0;
   width: fit-content;
 }
@@ -325,7 +330,6 @@ span {
   gap: 90px;
   width: 100%;
   max-width: 80vw;
-  flex-wrap: nowrap;
 }
 
 .contact-inner-container {
@@ -410,6 +414,9 @@ footer {
   .ml {
     margin-left: 70px;
   }
+  .logo-img {
+    margin-left: 70px;
+  }
 }
 
 @media (max-width: 1073px) {
@@ -421,10 +428,6 @@ footer {
   .navbar-nav {
     visibility: hidden;
   }
-  .logo-img {
-    height: 212px;
-    margin: 10px 0 0 70px;
-  }
 
   .btn-link {
     font-size: 1.3rem;
@@ -432,6 +435,9 @@ footer {
 
   .xs-icon {
     height: 30px;
+  }
+  .project-link {
+    font-size: 1.4rem;
   }
 
   h1 {
@@ -471,9 +477,6 @@ footer {
     font-size: 2rem;
     color: var(--orange-accent);
   }
-  .logo-img {
-    height: 142px;
-  }
 }
 
 @media (max-width: 830px) {
@@ -481,13 +484,16 @@ footer {
     font-size: 4rem;
   }
   p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .first-n {
     margin-top: 0;
   }
   h2 {
     font-size: 2rem;
+  }
+  h3 {
+    font-size: 1rem;
   }
   .home {
     margin-top: 100px;
@@ -509,21 +515,34 @@ footer {
     width: 650px;
     margin: 30px 10px 50px;
     padding: 7px;
-    max-width: 88vw;
+    max-width: 87vw;
     flex-direction: column;
+  }
+  .contact-container {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .contact-inner-container {
+    align-items: start;
   }
   .logo-img {
     margin-left: 20px;
   }
-  .contact-container {
-    flex-wrap: wrap;
+  .btn-link {
+    font-size: 0.8rem;
+  }
+  .contact-icon-sm {
+    height: 30px;
+  }
+  .contact-icon {
+    height: 42px;
+  }
+  .mail-icon {
+    margin-bottom: -5px;
   }
 }
 
 @media (max-width: 410px) {
-  .contact-inner-container {
-    align-items: start;
-  }
   .burger {
     margin: 10px;
   }
@@ -535,14 +554,13 @@ footer {
   }
   .logo-img {
     height: 100px;
-    margin: 10px 0 0 20px;
   }
   .ml {
     margin-left: 10px;
   }
   .card {
     width: 90vw;
-    max-width: 88vw;
+    max-width: 86vw;
     margin: 30px 5px 50px;
     flex-direction: column;
     -webkit-box-shadow: 5px 8px 0px 0px #000000;
