@@ -273,6 +273,7 @@ a {
 }
 
 .project-img {
+  margin: 10px 0 5px;
   flex-basis: content;
   border-radius: 3px;
 }
@@ -304,6 +305,7 @@ span {
   border: 2px solid black;
   transition: all 0.1s ease-in-out;
   text-decoration: none;
+  text-wrap: nowrap;
 }
 
 .project-cta {
@@ -323,12 +325,11 @@ span {
   gap: 90px;
   width: 100%;
   max-width: 80vw;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .contact-inner-container {
   display: flex;
-  height: 4vmin;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -358,6 +359,12 @@ footer {
   justify-content: center;
   width: 100%;
   color: gray;
+}
+
+@media (max-width: 1750px) {
+  .ml {
+    margin-left: 20vw;
+  }
 }
 
 @media (min-width: 1850px) {
@@ -437,7 +444,7 @@ footer {
   }
 
   h3 {
-    font-size: 2.3rem;
+    font-size: 1.5rem;
   }
 
   .contact-container {
@@ -508,7 +515,11 @@ footer {
   .logo-img {
     margin-left: 20px;
   }
+  .contact-container {
+    flex-wrap: wrap;
+  }
 }
+
 @media (max-width: 410px) {
   .contact-inner-container {
     align-items: start;
@@ -517,6 +528,7 @@ footer {
     margin: 10px;
   }
 }
+
 @media (max-width: 332px) {
   .home {
     margin-top: 60px;
