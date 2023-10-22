@@ -417,6 +417,9 @@ footer {
   .logo-img {
     margin-left: 70px;
   }
+  .home {
+    margin-top: 105px;
+  }
 }
 
 @media (max-width: 1073px) {
