@@ -1,7 +1,7 @@
 :root {
   --gray-bg: #eff5f5;
   --gray-shadow: #d6e4e5;
-  --orange-accent: #eb6440;
+  --orange-accent: #ed5027;
 }
 
 body,
@@ -81,7 +81,33 @@ a:hover {
 .navbar-nav {
   display: flex;
   gap: 20px;
-  margin: 0px 50px 12px 0;
+  margin: 0 16px 12px 0;
+}
+
+.underline {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+}
+
+.underline:hover {
+  text-decoration: none;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  opacity: 30%;
+  height: 2px;
+  background-color: var(--orange-accent);
+  bottom: 0;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+}
+
+.underline:hover::before {
+  width: 100%;
+  opacity: 90%;
 }
 
 .nav-hidden {
@@ -112,7 +138,7 @@ a:hover {
 
 .logo-img {
   height: 140px;
-  margin: 10px 0 0 20px;
+  margin: 10px 0 0 10px;
 }
 
 /* burger */
